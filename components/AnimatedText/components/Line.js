@@ -30,8 +30,8 @@ const Line = (props) => {
 			y: props.direction === "up" ? "100%" : "-100%",
 			opacity: 0,
 			scale: 0,
-			rotate: "-35deg",
-			transition: { delay: 0 },
+			rotate: props.direction === "up" ? "-35deg" : "0",
+			transition: { delay: 0, duration: props.duration / 2 },
 		},
 	};
 

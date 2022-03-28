@@ -1,7 +1,8 @@
-const PRIMARY_SENTENCE = "Lorem ipsum dolor sit amet consectetur";
+const PRIMARY_SENTENCE =
+	"Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.";
 const SECONDARY_SENTENCE =
-	"Purus duis pulvinar natoque cras donec laoreet facilisis mollis est";
-const MAX_WORDS_FOR_ROW = 3;
+	"Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Yes, Yes, without the oops! Jaguar shark! So tell me - does it really exist? ";
+const MAX_WORDS_FOR_ROW = 6;
 const DELAY = 0.015;
 const DURATION = 0.8;
 

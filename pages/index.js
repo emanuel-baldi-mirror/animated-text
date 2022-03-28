@@ -23,19 +23,19 @@ export default function Home() {
 	return (
 		<motion.div
 			animate={isMenuVisible ? "menu" : "page"}
-			className="w-full h-screen overflow-hidden"
+			className="w-full min-h-screen h-1 overflow-hidden"
 			variants={variants}>
-			<div className="flex flex-col justify-center h-full p-[8vw]">
-				<div className="flex h-full">
-					<Menu onClick={handleClick} />
-					<div className="w-[60%] flex flex-col justify-center ">
-						<AnimatedText
-							isMenuVisible={isMenuVisible}
-							primarySentence={PRIMARY_SENTENCE}
-							secondarySentence={SECONDARY_SENTENCE}
-						/>
-					</div>
-					<div className="w-[40%] p-12 flex flex-col justify-center relative">
+			<Menu onClick={handleClick} />
+			<div className="flex flex-col justify-center h-full p-[8vw] relative">
+				<div className="z-10">
+					<AnimatedText
+						isMenuVisible={isMenuVisible}
+						primarySentence={PRIMARY_SENTENCE}
+						secondarySentence={SECONDARY_SENTENCE}
+					/>
+				</div>
+				<div className="h-full w-[30%] absolute right-[10%] -top-1/2 translate-y-1/2">
+					<div className="flex flex-col justify-center h-full">
 						<AnimatedImage image={isMenuVisible ? img2 : img1} />
 					</div>
 				</div>
