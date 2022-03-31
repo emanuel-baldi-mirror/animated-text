@@ -1,0 +1,4 @@
+.text-stroked {
+	-webkit-text-stroke: 1px white;
+	-webkit-text-fill-color: #1e293b;
+}
